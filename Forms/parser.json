@@ -1,0 +1,153 @@
+{
+  "form": {
+    "title": "User Profile & Preferences Form",
+    "fields": [
+      {
+        "id": "fullName",
+        "label": "Full Name",
+        "type": "string",
+        "required": true,
+        "placeholder": "Enter your full name",
+        "maxLength": 100
+      },
+      {
+        "id": "about",
+        "label": "About You",
+        "type": "multiline",
+        "required": false,
+        "placeholder": "Tell us about yourself",
+        "maxLength": 500
+      },
+      {
+        "id": "age",
+        "label": "Age",
+        "type": "int",
+        "required": true,
+        "min": 1,
+        "max": 120
+      },
+      {
+        "id": "height",
+        "label": "Height (cm)",
+        "type": "decimal",
+        "required": false,
+        "min": 30,
+        "max": 300
+      },
+      {
+        "id": "email",
+        "label": "Email Address",
+        "type": "email",
+        "required": true,
+        "placeholder": "name@example.com"
+      },
+      {
+        "id": "phone",
+        "label": "Phone Number",
+        "type": "phone",
+        "required": false,
+        "placeholder": "+91 00000 00000"
+      },
+      {
+        "id": "password",
+        "label": "Password",
+        "type": "password",
+        "required": true,
+        "minLength": 8
+      },
+      {
+        "id": "dob",
+        "label": "Date of Birth",
+        "type": "date",
+        "required": true,
+        "min": "1900-01-01",
+        "max": "2025-12-31"
+      },
+      {
+        "id": "appointment",
+        "label": "Appointment Date & Time",
+        "type": "dateTime",
+        "required": false
+      },
+      {
+        "id": "preferredTime",
+        "label": "Preferred Time",
+        "type": "time",
+        "required": false
+      },
+      {
+        "id": "isActive",
+        "label": "Active User",
+        "type": "bool",
+        "required": false,
+        "default": true
+      },
+      {
+        "id": "gender",
+        "label": "Gender",
+        "type": "choice",
+        "required": true,
+        "options": ["Male", "Female", "Other"]
+      },
+      {
+        "id": "hobbies",
+        "label": "Hobbies",
+        "type": "checkbox",
+        "required": false,
+        "options": ["Sports", "Music", "Travel", "Art", "Gaming"]
+      },
+      {
+        "id": "maritalStatus",
+        "label": "Marital Status",
+        "type": "radio",
+        "required": false,
+        "options": ["Single", "Married", "Divorced", "Widowed"]
+      },
+      {
+        "id": "rating",
+        "label": "User Rating",
+        "type": "rating",
+        "required": false,
+        "min": 1,
+        "max": 5
+      },
+      {
+        "id": "website",
+        "label": "Personal Website",
+        "type": "url",
+        "required": false,
+        "placeholder": "https://example.com"
+      },
+      {
+        "id": "profilePicture",
+        "label": "Profile Image",
+        "type": "file",
+        "fileTypes": ["image/jpeg", "image/png"],
+        "required": false
+      },
+      {
+        "id": "monthlyIncome",
+        "label": "Monthly Income",
+        "type": "currency",
+        "required": false,
+        "min": 0,
+        "max": 1000000
+      },
+      {
+        "id": "satisfaction",
+        "label": "Satisfaction Level",
+        "type": "slider",
+        "required": false,
+        "min": 0,
+        "max": 100
+      },
+      {
+        "id": "country",
+        "label": "Country",
+        "type": "choice",
+        "required": true,
+        "options": ["India", "USA", "UK", "Australia", "Singapore"]
+      }
+    ]
+  }
+}
